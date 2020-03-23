@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Covid-19</title>
+    <style>
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+        
+        .buttons {
+            position: relative;
+            z-index: 1;
+        }
+
+        .buttons button {
+            border: none;
+            padding: 10px;
+            background: black;
+            color: white;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .buttons button:hover {
+            background: rgb(160, 54, 16);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            opacity: 0.2;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.0.45/css/materialdesignicons.min.css">
+</head>
+
+<body>
+
+    <video>
+        <source src="./videos/covid-19.mp4" type="video/mp4">
+        <!-- Source: https://www.pexels.com/video/man-showing-guidelines-to-avoid-being-infected-3959687/ -->
+    </video>
+
+    <div class="buttons">
+        <button id="wasjehanden">
+            <i class="mdi mdi-hand-water"></i>
+        </button>
+        <button id="gezichtnietaanraken">
+            <i class="mdi mdi-face"></i>
+        </button>
+        <button id="vermijdcontact">
+            <i class="mdi mdi-bacteria"></i>
+        </button>
+        <button id="blijfinuwkot">
+            <i class="mdi mdi-home-account"></i>
+        </button>
+        <button id="loopweg">
+            <i class="mdi mdi-walk"></i>
+        </button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
